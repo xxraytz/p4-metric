@@ -1,20 +1,17 @@
-# p4‑metric
-**Harmonic Averaging in Classifier Quality Assessment**
-
-[PyPI - Version](https://pypi.org/project/p4-metric)
+# Harmonic Averaging in Classifier Quality Assessment
 
 [Python](https://pypi.org/project/p4-metric)
 
 [License](LICENSE)
 
-`p4-metric` implements the family of **P4** metrics introduced in  
+This repo implements the **P4** metric introduced in  
 O. Seredin & A. Kopylov, “Harmonic Averaging in Classifier Quality Assessment,”  
 *Pattern Recognition and Image Analysis*, 34 (4) 1160‑1171 (2024)  
 <https://link.springer.com/article/10.1134/S1054661824701220>.
 
-The metric is the harmonic mean of *precision* and *recall* computed twice:  
-- **Two classes:** once for treating class 1 as positive and once for treating class 2 as positive.  
-- **Multiple classes:** The same idea is extended via **One‑Vs‑Rest** aggregation.
+The metric is the harmonic mean of *precision* and *recall*:  
+- **Binary:** compute it twice—once with each class as the positive class.
+- **Multiclass:** apply the same principle using **One‑Vs‑Rest** aggregation.
 
 **Key properties**
 
