@@ -1,7 +1,7 @@
 from importlib.metadata import version, PackageNotFoundError
 
 try:
-    __version__ = version("p4-metric")
+    __version__ = version('p4-metric')
 except PackageNotFoundError:
     __version__ = "0.0.0.dev0"
 
